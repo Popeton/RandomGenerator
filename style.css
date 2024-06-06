@@ -49,6 +49,10 @@ header {
     gap: 3em;
 }
 
+.input-wrapper {
+    margin-bottom: 1em;
+}
+
 label {
     font-size: 1.2em;
     font-weight: 600;
@@ -71,7 +75,7 @@ input:focus {
     border-color: #0D0D0D;
 }
 
-button#generate, button#setNextNumber {
+button#generate, button#setNextNumbers {
     display: block;
     width: 100%;
     font-size: 1.1em;
@@ -84,7 +88,7 @@ button#generate, button#setNextNumber {
     color: #F2F2F2;
 }
 
-button#generate:hover, button#setNextNumber:hover {
+button#generate:hover, button#setNextNumbers:hover {
     background-color: #0D0D0D;
 }
 
