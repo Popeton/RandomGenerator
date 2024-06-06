@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <h1 id="title-label">Generador de números random</h1>
+    <div class="container">
+      <div class="wrapper">
+        <div class="input-wrapper">
+          <label for="min">Min:</label>
+          <input type="number" id="min" value="0" />
+        </div>
+        <div class="input-wrapper">
+          <label for="max">Max:</label>
+          <input type="number" id="max" value="10" />
+        </div>
+        <div class="input-wrapper">
+            <label for="userInput">Proximo Numero:</label>
+            <input type="number" id="userInput" class="input" />
+        </div>
+      </div>
+      <button id="generate">Generar</button>
+      <div id="result"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
