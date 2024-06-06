@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Random Number Generator</title>
+  <title>Proximo Numero</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <!-- Stylesheet -->
@@ -13,22 +13,21 @@
         <img src="logo.jpg" alt="Logo" class="logo" />
         <h1 class="main-title">Caballada Nuevo Juicio</h1>
       </header>
-  <h1 id="title-label">Generador de números random</h1>
+  <h1 id="title-label">Seleccionar Proximo Numero</h1>
   <div class="container">
-    <div class="wrapper">
-      <div class="input-wrapper">
-        <label for="min">Min:</label>
-        <input type="number" id="min" value="0" />
-      </div>
-      <div class="input-wrapper">
-        <label for="max">Max:</label>
-        <input type="number" id="max" value="10" />
-      </div>
+    <div class="input-wrapper">
+      <label for="userInput">Proximo Numero:</label>
+      <input type="number" id="userInput" class="input" />
     </div>
-    <button id="generate">Generar</button>
-    <div id="result"></div>
+    <button id="setNextNumber">Guardar</button>
   </div>
   <!-- Script -->
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("setNextNumber").addEventListener("click", function() {
+      const userInput = document.getElementById("userInput").value;
+      localStorage.setItem("nextNumber", userInput);
+      alert("Numero guardado");
+    });
+  </script>
 </body>
 </html>

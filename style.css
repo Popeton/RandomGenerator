@@ -3,13 +3,35 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  body {
+}
+
+body {
     height: 100vh;
-    background: linear-gradient(#e3f7fc 50%, #1b30d3 50%);
-  }
-  .container {
-    background-color: #ffffff;
+    background: linear-gradient(#F2F2F2 50%, #A6A6A6 50%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-color: #0D0D0D;
+    box-shadow: 0 1.2em 2.8em rgba(0, 41, 22, 0.2);
+    margin-bottom: 1em;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 1em;
+}
+
+.main-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #F2F2F2;
+}
+
+.container {
+    background-color: #FFFFFF;
     width: 85vw;
     max-width: 34em;
     position: absolute;
@@ -19,56 +41,65 @@
     padding: 3em;
     border-radius: 0.5em;
     box-shadow: 0 1.2em 2.8em rgba(0, 41, 22, 0.2);
-  }
-  .wrapper {
+}
+
+.wrapper {
     display: flex;
     justify-content: space-between;
     gap: 3em;
-  }
-  label {
+}
+
+label {
     font-size: 1.2em;
     font-weight: 600;
-    color: #242e4c;
-  }
-  input {
+    color: #262626;
+}
+
+input {
     display: block;
     width: 100%;
     font-size: 1.3em;
     border: none;
-    color: #444b5f;
-    border-bottom: 1.5px solid #242e4c;
+    color: #262626;
+    border-bottom: 1.5px solid #595959;
     padding: 0.45em;
     margin-top: 0.45em;
     outline: none;
-  }
-  input:focus {
-    border-color: #1734b9;
-  }
-  button#generate {
+}
+
+input:focus {
+    border-color: #0D0D0D;
+}
+
+button#generate, button#setNextNumber {
     display: block;
     width: 100%;
     font-size: 1.1em;
     margin: 2.7em 0 1.1em 0;
-    background-color: #1cb6c1;
+    background-color: #262626;
     padding: 0.8em 0;
     border: none;
     border-radius: 0.5em;
     cursor: pointer;
-    color: #ffffff;
-  }
-  #result {
+    color: #F2F2F2;
+}
+
+button#generate:hover, button#setNextNumber:hover {
+    background-color: #0D0D0D;
+}
+
+#result {
     text-align: center;
     font-size: 3.7em;
-    font-size: 600;
-    color: #242e4c;
-  }
-  #title-label {
+    font-weight: 600;
+    color: #262626;
+}
+
+#title-label {
     text-align: center;
     font-size: 3em;
     font-weight: 600;
-    color: #242e4c;
+    color: #262626;
     margin-bottom: 1em;
-    margin-top: 3%;
-}  
-
-  
+    margin-top: -1%;
+}
